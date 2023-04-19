@@ -5,7 +5,7 @@
 }
 
 /* 所有页面背景 */
-#aside-content, .layout > div:first-child:not(.recent-posts), #footer {
+.layout > div:first-child:not(.recent-posts), .card-widget:first-child, .card-widget, .sticky_layout, #footer {
     /* 以下代表透明度为0.5 */
     background: rgba(255,255,255,.5);
 }
