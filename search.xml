@@ -35,7 +35,7 @@
       <link href="/css/custom.css"/>
       <url>/css/custom.css</url>
       
-        <content type="html"><![CDATA[/* 全站透明 */#body-wrap {    opacity：0.8;  }]]></content>
+        <content type="html"><![CDATA[/* 全站透明 */#page {    opacity：0.8;  }]]></content>
       
     </entry>
     
