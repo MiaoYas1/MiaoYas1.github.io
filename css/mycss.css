@@ -13,3 +13,14 @@
 #web_bg {
     background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
     }
+
+/*汉仪新蒂牌楼体*/
+@font-face {
+    font-family: 'Pailou';
+    src: url(/font/HanyiSentyPailouArch.ttf);
+}
+ /*FredokaOne*/
+@font-face {
+    font-family: 'FredokaOne';
+    src: url(/font/FredokaOne-Regular.ttf);
+}
