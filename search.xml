@@ -8,7 +8,7 @@
       <link href="/posts/bac9e257.html"/>
       <url>/posts/bac9e257.html</url>
       
-        <content type="html"><![CDATA[<blockquote><p>这个面板不能说是最完美的，简洁，功能够用，并且支持中文，维护者也有持续在迭代更新，就个人用户而言，搞个VPS搭建网站程序，CloudPanel是一个不错的选择。</p></blockquote><p><strong>注意：仅支持Debian&#x2F;Ubuntu系统</strong></p><p><img src="https://i.328888.xyz/2023/04/20/iFot7p.jpeg" alt="仪表板"></p><p><img src="https://i.328888.xyz/2023/04/20/iFonwL.jpeg" alt="组件"></p><blockquote><p>以上图片来自官方Demo <a href="https://demo.cloudpanel.io/" title="点击查看官方Demo">点击查看官方Demo</a></p></blockquote><h1 id="安装CloudPanel面板"><a href="#安装CloudPanel面板" class="headerlink" title="安装CloudPanel面板"></a>安装CloudPanel面板</h1><p>官方安装说明<a href="https://www.cloudpanel.io/docs/v2/getting-started/other/" title="点这里">点这里</a></p><h3 id="登录系统后，先执行以下命令更新一下"><a href="#登录系统后，先执行以下命令更新一下" class="headerlink" title="登录系统后，先执行以下命令更新一下"></a>登录系统后，先执行以下命令更新一下</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt update &amp;&amp; apt -y upgrade &amp;&amp; apt -y install curl wget sudo</span><br></pre></td></tr></table></figure><p>然后进入官方页面：<a href="https://www.cloudpanel.io/docs/v2/getting-started/other/" title="点击这里">点击这里</a></p><p><img src="https://i.328888.xyz/2023/04/20/iFolvy.jpeg" alt="系统选择"></p><h5 id="选择正确的操作系统，以及适合你的数据库引擎，复制命令后回到SSH客户端执行即可开始安装"><a href="#选择正确的操作系统，以及适合你的数据库引擎，复制命令后回到SSH客户端执行即可开始安装" class="headerlink" title="选择正确的操作系统，以及适合你的数据库引擎，复制命令后回到SSH客户端执行即可开始安装"></a>选择正确的操作系统，以及适合你的数据库引擎，复制命令后回到SSH客户端执行即可开始安装</h5><h5 id="安装完毕后，即可通过-你的服务器IP-8443-访问管理后台，-需要提前在防火墙放行8443端口"><a href="#安装完毕后，即可通过-你的服务器IP-8443-访问管理后台，-需要提前在防火墙放行8443端口" class="headerlink" title="安装完毕后，即可通过 你的服务器IP:8443 访问管理后台，(需要提前在防火墙放行8443端口)"></a>安装完毕后，即可通过 你的服务器IP:8443 访问管理后台，(需要提前在防火墙放行8443端口)</h5><p>#####此时应尽快创建面板的管理员账户。由于初始化安装完成后，任何人拿到以上网址都能登录和操作，所以需要尽快完成管理员账户的创建。</p><h1 id="WordPress性能优化"><a href="#WordPress性能优化" class="headerlink" title="WordPress性能优化"></a>WordPress性能优化</h1><h2 id="启用Varnish加速"><a href="#启用Varnish加速" class="headerlink" title="启用Varnish加速"></a>启用Varnish加速</h2><p>面板后台-网站群-网站管理- Varnish Cache，开启Varnish Cache，并在WordPress后台安装CLP Varnish Cache Plugin插件进行相应配置。如果网站更新频率不高，可以适当拉长缓存更新时长（Cache Lifetime）。</p><h2 id="开启页面速度"><a href="#开启页面速度" class="headerlink" title="开启页面速度"></a>开启页面速度</h2><p>面板后台-网站群-网站管理- 设置，拉到下方，打开页面速度并保存，网站图片会自动转变为Webp格式并缓存</p><h2 id="使用Redis缓存"><a href="#使用Redis缓存" class="headerlink" title="使用Redis缓存"></a>使用Redis缓存</h2><p>在WordPress插件页面搜索并安装 Redis 缓存插件 - Redis Object Cache<br>跳转到设置 - Redis，点击 Enable Object Cache 按钮开启即可。</p>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>这个面板不能说是最完美的，简洁，功能够用，并且支持中文，维护者也有持续在迭代更新，就个人用户而言，搞个VPS搭建网站程序，CloudPanel是一个不错的选择。</p></blockquote><p><strong>注意：仅支持Debian&#x2F;Ubuntu系统</strong></p><p><img src="https://i.328888.xyz/2023/04/20/iFot7p.jpeg" alt="仪表板"></p><p><img src="https://i.328888.xyz/2023/04/20/iFonwL.jpeg" alt="组件"></p><blockquote><p>以上图片来自官方Demo <a href="https://demo.cloudpanel.io/" title="点击查看官方Demo">点击查看官方Demo</a></p></blockquote><h1 id="安装CloudPanel面板"><a href="#安装CloudPanel面板" class="headerlink" title="安装CloudPanel面板"></a>安装CloudPanel面板</h1><p>官方安装说明<a href="https://www.cloudpanel.io/docs/v2/getting-started/other/" title="点这里">点这里</a><br>登录系统后，先执行以下命令更新一下</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt update &amp;&amp; apt -y upgrade &amp;&amp; apt -y install curl wget sudo</span><br></pre></td></tr></table></figure><p>然后进入官方页面：<a href="https://www.cloudpanel.io/docs/v2/getting-started/other/" title="点击这里">点击这里</a></p><p><img src="https://i.328888.xyz/2023/04/20/iFolvy.jpeg" alt="系统选择"></p><p>选择正确的操作系统，以及适合你的数据库引擎，复制命令后回到SSH客户端执行即可开始安装</p><p>安装完毕后，即可通过 你的服务器IP:8443 访问管理后台，(需要提前在防火墙放行8443端口)</p><p>此时应尽快创建面板的管理员账户。由于初始化安装完成后，任何人拿到以上网址都能登录和操作，所以需要尽快完成管理员账户的创建。</p><h1 id="WordPress性能优化"><a href="#WordPress性能优化" class="headerlink" title="WordPress性能优化"></a>WordPress性能优化</h1><h2 id="启用Varnish加速"><a href="#启用Varnish加速" class="headerlink" title="启用Varnish加速"></a>启用Varnish加速</h2><p>面板后台-网站群-网站管理- Varnish Cache，开启Varnish Cache，并在WordPress后台安装CLP Varnish Cache Plugin插件进行相应配置。如果网站更新频率不高，可以适当拉长缓存更新时长（Cache Lifetime）。</p><h2 id="开启页面速度"><a href="#开启页面速度" class="headerlink" title="开启页面速度"></a>开启页面速度</h2><p>面板后台-网站群-网站管理- 设置，拉到下方，打开页面速度并保存，网站图片会自动转变为Webp格式并缓存</p><h2 id="使用Redis缓存"><a href="#使用Redis缓存" class="headerlink" title="使用Redis缓存"></a>使用Redis缓存</h2><p>在WordPress插件页面搜索并安装 Redis 缓存插件 - Redis Object Cache<br>跳转到设置 - Redis，点击 Enable Object Cache 按钮开启即可。</p>]]></content>
       
       
       <categories>
@@ -47,9 +47,9 @@
     
     
     <entry>
-      <title>友链</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -80,9 +80,9 @@
     
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>音乐</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -102,9 +102,9 @@
     
     
     <entry>
-      <title>音乐</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
+      <title>友链</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
