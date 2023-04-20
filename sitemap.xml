@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://ysl.cm/posts/bac9e257.html</loc>
+    <loc>https://ysl.cm/posts/hello-world.html</loc>
     
     <lastmod>2023-04-20</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://ysl.cm/posts/da91c417.html</loc>
+    <loc>https://ysl.cm/posts/cloudpanel-yi-ge-jian-ji-de-web-guan-li-mian-ban.html</loc>
     
     <lastmod>2023-04-20</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://ysl.cm/posts/4a17b156.html</loc>
+    <loc>https://ysl.cm/posts/cloudflare-guan-fang-mian-fei-cname-jie-ru.html</loc>
     
     <lastmod>2023-04-20</lastmod>
     
@@ -99,14 +99,14 @@
   </url>
   
   <url>
-    <loc>https://ysl.cm/tags/CloudPanel/</loc>
+    <loc>https://ysl.cm/tags/Cloudflare/</loc>
     <lastmod>2023-04-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ysl.cm/tags/Cloudflare/</loc>
+    <loc>https://ysl.cm/tags/CloudPanel/</loc>
     <lastmod>2023-04-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
