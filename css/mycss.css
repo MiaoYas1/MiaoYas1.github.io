@@ -15,12 +15,12 @@
     }
 
 /*汉仪新蒂牌楼体*/
-/* @font-face {
+@font-face {
     font-family: 'Pailou';
     src: url(/font/HanyiSentyPailouArch.ttf);
-} */
+}
 
  /*文章字体大小*/
 #article-container p {
-    font-size: 18px;
+    font-size: 19px;
 }
