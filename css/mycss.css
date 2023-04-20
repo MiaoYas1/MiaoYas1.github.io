@@ -15,15 +15,10 @@
     }
 
 /*汉仪新蒂牌楼体*/
-@font-face {
+/* @font-face {
     font-family: 'Pailou';
     src: url(/font/HanyiSentyPailouArch.ttf);
-}
- /*FredokaOne*/
-@font-face {
-    font-family: 'FredokaOne';
-    src: url(/font/FredokaOne-Regular.ttf);
-}
+} */
 
  /*文章字体大小*/
 #article-container p {
