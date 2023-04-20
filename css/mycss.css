@@ -25,4 +25,7 @@
     src: url(/font/FredokaOne-Regular.ttf);
 }
 
-
+ /*文章字体大小*/
+#article-container p {
+    font-size: 18px;
+}
