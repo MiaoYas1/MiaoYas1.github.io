@@ -17,10 +17,16 @@
 /*汉仪新蒂牌楼体*/
 @font-face {
     font-family: 'Pailou';
-    src: url(/font/HanyiSentyPailouArch.ttf);
+    /* src: url(/font/HanyiSentyPailouArch.ttf); */
+    src: url(/font/Pailou.woff2);
 }
 
  /*文章字体大小*/
 #article-container p {
     font-size: 19px;
+}
+
+/*卡片圆角调整*/
+.cardHover, .error404 #error-wrap .error-content, .layout > div:first-child:not(.recent-posts), #recent-posts > .recent-post-item, #aside-content .card-widget, .layout > .recent-posts .pagination > *:not(.space) {
+    border-radius: 3px;
 }
