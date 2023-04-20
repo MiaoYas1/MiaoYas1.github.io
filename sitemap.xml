@@ -2,27 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://ysl.cm/posts/bac9e257.html</loc>
-    
-    <lastmod>2023-04-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://ysl.cm/about/index.html</loc>
-    
-    <lastmod>2023-04-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://ysl.cm/posts/4a17b156.html</loc>
     
-    <lastmod>2023-04-19</lastmod>
+    <lastmod>2023-04-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ysl.cm/posts/da91c417.html</loc>
+    
+    <lastmod>2023-04-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ysl.cm/tags/index.html</loc>
+    
+    <lastmod>2023-04-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ysl.cm/link/index.html</loc>
+    
+    <lastmod>2023-04-20</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -31,14 +40,23 @@
   <url>
     <loc>https://ysl.cm/categories/index.html</loc>
     
-    <lastmod>2023-04-19</lastmod>
+    <lastmod>2023-04-20</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://ysl.cm/link/index.html</loc>
+    <loc>https://ysl.cm/posts/bac9e257.html</loc>
+    
+    <lastmod>2023-04-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ysl.cm/about/index.html</loc>
     
     <lastmod>2023-04-19</lastmod>
     
@@ -64,19 +82,10 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://ysl.cm/tags/index.html</loc>
-    
-    <lastmod>2023-04-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://ysl.cm/</loc>
-    <lastmod>2023-04-19</lastmod>
+    <lastmod>2023-04-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -84,14 +93,21 @@
   
   <url>
     <loc>https://ysl.cm/tags/Web/</loc>
-    <lastmod>2023-04-19</lastmod>
+    <lastmod>2023-04-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://ysl.cm/tags/CloudPanel/</loc>
-    <lastmod>2023-04-19</lastmod>
+    <lastmod>2023-04-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ysl.cm/tags/Cloudflare/</loc>
+    <lastmod>2023-04-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -100,7 +116,7 @@
   
   <url>
     <loc>https://ysl.cm/categories/Web/</loc>
-    <lastmod>2023-04-19</lastmod>
+    <lastmod>2023-04-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
