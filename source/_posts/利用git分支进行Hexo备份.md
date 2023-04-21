@@ -43,22 +43,24 @@ git push origin hexo     # 将本地数据推送到 hexo 分支中
 推送完成即备份完毕
 
 # 迁移与复原
-新环境重新安装Node.js，Hexo,以及主题相关依赖，插件。
-```
-npm install -g hexo-cli
-hexo init
-```
-## 安装Hexo-deployer-git
-```shell
-npm install hexo-deployer-git --save
-```
-
 ## 克隆备份分支
 将原来的source，package.json，theme主题等文件克隆到Hexo根目录下
 ```
 git clone -b hexo_backup git@github.com:[username]/[username].github.io.git
 npm install   # npm i
 ```
+在clone下来的文件夹里面执行
+```
+npm install -g hexo-cli
+npm i
+不需要执行hexo init这条指令，因为不是从零搭建起新博客
+```
+
+## 安装Hexo-deployer-git
+```shell
+npm install hexo-deployer-git --save
+```
+
 ## 渲染推送
 ```
 hexo cl
@@ -67,3 +69,13 @@ hexo d
 # 生成新的页面并推送至主分支
 ```
 主分支会利用Hexo自身集成的git组件进行推送。
+
+# 日常备份
+```
+hexo cl
+git add . 
+git commit -m "backup"
+git push origin hexo
+hexo g
+hexo d
+```
