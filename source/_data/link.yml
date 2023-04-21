@@ -1,0 +1,31 @@
+- class_name: 友情链接
+  class_desc: 值得推荐的网站
+  link_list:
+    - name: 相约星空下
+      link: https://xyxkx.com/
+      avatar: https://xyxkx.com/favicon.png
+      descr: 二次元壁纸美图COS作品综合门户
+    - name: 星空门户
+      link: https://www.71xk.com/
+      avatar: https://cdn1.71xk.com/images/png_favicon.png
+      descr: 星空门户官方网站
+    - name: 星亿网
+      link: https://xywtc.com/
+      avatar: https://xywtc.com/favicon.ico
+      descr: 用心做好每一件事!
+
+- class_name: 网站导航
+  class_desc: 值得推荐的网站
+  link_list:
+    - name: Hostloc
+      link: https://hostloc.com/
+      avatar: https://hostloc.com/favicon.ico
+      descr: 全球煮鸡交流论坛
+    - name: Editor.md
+      link: https://pandao.github.io/editor.md/index.html
+      avatar: https://pandao.github.io/editor.md/favicon.ico
+      descr: 开源在线 Markdown 编辑器
+    - name: Cloudflare
+      link: https://cloudflare.com/
+      avatar: https://www.cloudflare.com/favicon.ico
+      descr: 免费CDN安全防护
