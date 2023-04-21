@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ysl.cm/posts/li-yong-git-fen-zhi-jin-xing-hexo-bei-fen.html</loc>
+    
+    <lastmod>2023-04-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://ysl.cm/tags/index.html</loc>
     
     <lastmod>2023-04-21</lastmod>
@@ -11,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://ysl.cm/music/index.html</loc>
+    <loc>https://ysl.cm/movies/index.html</loc>
     
     <lastmod>2023-04-21</lastmod>
     
@@ -20,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://ysl.cm/movies/index.html</loc>
+    <loc>https://ysl.cm/music/index.html</loc>
     
     <lastmod>2023-04-21</lastmod>
     
@@ -106,6 +115,13 @@
   </url>
   
   <url>
+    <loc>https://ysl.cm/tags/Hexo/</loc>
+    <lastmod>2023-04-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://ysl.cm/tags/Cloudflare/</loc>
     <lastmod>2023-04-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -116,6 +132,13 @@
   
   <url>
     <loc>https://ysl.cm/categories/Web/</loc>
+    <lastmod>2023-04-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ysl.cm/categories/Hexo/</loc>
     <lastmod>2023-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
