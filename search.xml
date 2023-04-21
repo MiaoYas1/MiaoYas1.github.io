@@ -74,31 +74,9 @@
     
     
     <entry>
-      <title>关于我</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>人生不能太圆满，求而不得也未必是遗憾。</p></blockquote><h1 id="关于博客"><a href="#关于博客" class="headerlink" title="关于博客"></a>关于博客</h1><ul><li>Hexo - 博客框架</li><li>Hexo-Theme-Butterfly - 博客主题</li><li>Github Pages + Vercel - 托管站点</li></ul>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>朋友们</title>
       <link href="/link/index.html"/>
       <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -112,6 +90,17 @@
       <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于我</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>人生不能太圆满，求而不得也未必是遗憾。</p></blockquote><h1 id="关于博客"><a href="#关于博客" class="headerlink" title="关于博客"></a>关于博客</h1><ul><li>Hexo - 博客框架</li><li>Hexo-Theme-Butterfly - 博客主题</li><li>Github Pages + Vercel - 托管站点</li></ul>]]></content>
       
     </entry>
     
@@ -134,6 +123,17 @@
       <url>/music/index.html</url>
       
         <content type="html"><![CDATA[<div class="aplayer" data-id="8675637915" data-server="tencent" data-type="playlist" data-mutex="true" data-preload="auto" data-theme="#3F51B5" data-volume="1" data-order="random" data-autoplay="true" data-listmaxheight="600px"></div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
