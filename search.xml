@@ -8,7 +8,7 @@
       <link href="/posts/li-yong-git-fen-zhi-jin-xing-hexo-bei-fen.html"/>
       <url>/posts/li-yong-git-fen-zhi-jin-xing-hexo-bei-fen.html</url>
       
-        <content type="html"><![CDATA[<h1 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h1><p><img src="https://s2.loli.net/2023/04/22/GhsnguvADzC85B9.jpg" alt="创建分支.jpg"><br>在Hexo博客根目录下创建.git，最新版的Hexo在初始化之后是没有.git目录的，通过_config.yml里面的deploy参数生成.deploy_git目录，并在通过该目录进行push操作。<br>将Github部署的博客整个克隆下来，然后复制其中的.git目录到Hexo的根目录下。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git branch -a    # 查看所有分支</span><br><span class="line"></span><br><span class="line">git branch    # 查看当前使用分支</span><br><span class="line"></span><br><span class="line">git checkout hexo   # 切换到 hexo 分支上，若不存在则创建该分支并切换到该分支</span><br></pre></td></tr></table></figure><h1 id="创建-gitignore"><a href="#创建-gitignore" class="headerlink" title="创建.gitignore"></a>创建.gitignore</h1><p>直接在Hexo根目录下创建.gitignore排除剩下的不需要备份的文件。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">Thumbs.db</span><br><span class="line">db.json</span><br><span class="line">*.log</span><br><span class="line">node_modules/</span><br><span class="line">public/</span><br><span class="line">.deploy*/</span><br><span class="line">_multiconfig.yml</span><br></pre></td></tr></table></figure><p><strong>注意：如果要连同主题文件一起备份，那么需要查看主题文件夹中是否有.git文件夹，如果有需要删除</strong></p><h1 id="提交备份"><a href="#提交备份" class="headerlink" title="提交备份"></a>提交备份</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git add .     # 添加当前目录</span><br><span class="line"></span><br><span class="line">git commit -m &quot;backup&quot;    # 添加commit，引号内的内容随意</span><br><span class="line"></span><br><span class="line">git push origin hexo     # 将本地数据推送到 hexo 分支中</span><br></pre></td></tr></table></figure><p>远程仓库有两个分支，必须指定分支hexo，不能直接git push。</p><p>推送完成即备份完毕</p><h1 id="迁移与复原"><a href="#迁移与复原" class="headerlink" title="迁移与复原"></a>迁移与复原</h1><p>新环境重新安装Node.js，Hexo,以及主题相关依赖，插件。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">hexo init</span><br></pre></td></tr></table></figure><h2 id="安装Hexo-deployer-git"><a href="#安装Hexo-deployer-git" class="headerlink" title="安装Hexo-deployer-git"></a>安装Hexo-deployer-git</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><h2 id="克隆备份分支"><a href="#克隆备份分支" class="headerlink" title="克隆备份分支"></a>克隆备份分支</h2><p>将原来的source，package.json，theme主题等文件克隆到Hexo根目录下</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git clone -b hexo_backup git@github.com:[username]/[username].github.io.git</span><br><span class="line">npm install   # npm i</span><br></pre></td></tr></table></figure><h2 id="渲染推送"><a href="#渲染推送" class="headerlink" title="渲染推送"></a>渲染推送</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo cl</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br><span class="line"># 生成新的页面并推送至主分支</span><br></pre></td></tr></table></figure><p>主分支会利用Hexo自身集成的git组件进行推送。</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h1><p><img src="https://s2.loli.net/2023/04/22/GhsnguvADzC85B9.jpg" alt="创建分支.jpg"><br>在Hexo博客根目录下创建.git，最新版的Hexo在初始化之后是没有.git目录的，通过_config.yml里面的deploy参数生成.deploy_git目录，并在通过该目录进行push操作。<br>将Github部署的博客整个克隆下来，然后复制其中的.git目录到Hexo的根目录下。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git branch -a    # 查看所有分支</span><br><span class="line"></span><br><span class="line">git branch    # 查看当前使用分支</span><br><span class="line"></span><br><span class="line">git checkout hexo   # 切换到 hexo 分支上，若不存在则创建该分支并切换到该分支</span><br></pre></td></tr></table></figure><h1 id="创建-gitignore"><a href="#创建-gitignore" class="headerlink" title="创建.gitignore"></a>创建.gitignore</h1><p>直接在Hexo根目录下创建.gitignore排除剩下的不需要备份的文件。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">Thumbs.db</span><br><span class="line">db.json</span><br><span class="line">*.log</span><br><span class="line">node_modules/</span><br><span class="line">public/</span><br><span class="line">.deploy*/</span><br><span class="line">_multiconfig.yml</span><br></pre></td></tr></table></figure><p><strong>注意：如果要连同主题文件一起备份，那么需要查看主题文件夹中是否有.git文件夹，如果有需要删除</strong></p><h1 id="提交备份"><a href="#提交备份" class="headerlink" title="提交备份"></a>提交备份</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git add .     # 添加当前目录</span><br><span class="line"></span><br><span class="line">git commit -m &quot;backup&quot;    # 添加commit，引号内的内容随意</span><br><span class="line"></span><br><span class="line">git push origin hexo     # 将本地数据推送到 hexo 分支中</span><br></pre></td></tr></table></figure><p>远程仓库有两个分支，必须指定分支hexo，不能直接git push。</p><p>推送完成即备份完毕</p><h1 id="迁移与复原"><a href="#迁移与复原" class="headerlink" title="迁移与复原"></a>迁移与复原</h1><h2 id="克隆备份分支"><a href="#克隆备份分支" class="headerlink" title="克隆备份分支"></a>克隆备份分支</h2><p>将原来的source，package.json，theme主题等文件克隆到Hexo根目录下</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git clone -b hexo_backup git@github.com:[username]/[username].github.io.git</span><br><span class="line">npm install   # npm i</span><br></pre></td></tr></table></figure><p>在clone下来的文件夹里面执行</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">npm i</span><br><span class="line">不需要执行hexo init这条指令，因为不是从零搭建起新博客</span><br></pre></td></tr></table></figure><h2 id="安装Hexo-deployer-git"><a href="#安装Hexo-deployer-git" class="headerlink" title="安装Hexo-deployer-git"></a>安装Hexo-deployer-git</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><h2 id="渲染推送"><a href="#渲染推送" class="headerlink" title="渲染推送"></a>渲染推送</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo cl</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br><span class="line"># 生成新的页面并推送至主分支</span><br></pre></td></tr></table></figure><p>主分支会利用Hexo自身集成的git组件进行推送。</p><h1 id="日常备份"><a href="#日常备份" class="headerlink" title="日常备份"></a>日常备份</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">hexo cl</span><br><span class="line">git add . </span><br><span class="line">git commit -m &quot;backup&quot;</span><br><span class="line">git push origin hexo</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
@@ -99,33 +99,11 @@
     
     
     <entry>
-      <title>电影</title>
-      <link href="/movies/index.html"/>
-      <url>/movies/index.html</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>音乐</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="aplayer" data-id="8675637915" data-server="tencent" data-type="playlist" data-mutex="true" data-preload="auto" data-theme="#3F51B5" data-volume="1" data-order="random" data-autoplay="true" data-listmaxheight="600px"></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>关于我</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>人生不能太圆满，求而不得也未必是遗憾。</p></blockquote><h1 id="关于博客"><a href="#关于博客" class="headerlink" title="关于博客"></a>关于博客</h1><ul><li>Hexo - 博客框架</li><li>Hexo-Theme-Butterfly - 博客主题</li><li>Github Pages + Vercel - 托管站点</li></ul>]]></content>
       
     </entry>
     
@@ -143,11 +121,33 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>电影</title>
+      <link href="/movies/index.html"/>
+      <url>/movies/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于我</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>人生不能太圆满，求而不得也未必是遗憾。</p></blockquote><h1 id="关于博客"><a href="#关于博客" class="headerlink" title="关于博客"></a>关于博客</h1><ul><li>Hexo - 博客框架</li><li>Hexo-Theme-Butterfly - 博客主题</li><li>Github Pages + Vercel - 托管站点</li></ul>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>音乐</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="aplayer" data-id="8675637915" data-server="tencent" data-type="playlist" data-mutex="true" data-preload="auto" data-theme="#3F51B5" data-volume="1" data-order="random" data-autoplay="true" data-listmaxheight="600px"></div>]]></content>
       
     </entry>
     
