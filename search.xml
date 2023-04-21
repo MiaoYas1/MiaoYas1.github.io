@@ -110,6 +110,17 @@
     
     
     <entry>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于我</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
@@ -126,17 +137,6 @@
       <url>/music/index.html</url>
       
         <content type="html"><![CDATA[<div class="aplayer" data-id="8675637915" data-server="tencent" data-type="playlist" data-mutex="true" data-preload="auto" data-theme="#3F51B5" data-volume="1" data-order="random" data-autoplay="true" data-listmaxheight="600px"></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
