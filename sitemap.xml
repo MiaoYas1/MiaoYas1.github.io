@@ -20,15 +20,6 @@
   </url>
   
   <url>
-    <loc>https://ysl.cm/music/index.html</loc>
-    
-    <lastmod>2023-04-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://ysl.cm/movies/index.html</loc>
     
     <lastmod>2023-04-21</lastmod>
@@ -38,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://ysl.cm/categories/index.html</loc>
+    <loc>https://ysl.cm/music/index.html</loc>
     
     <lastmod>2023-04-21</lastmod>
     
@@ -48,6 +39,15 @@
   
   <url>
     <loc>https://ysl.cm/link/index.html</loc>
+    
+    <lastmod>2023-04-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ysl.cm/categories/index.html</loc>
     
     <lastmod>2023-04-21</lastmod>
     
@@ -115,14 +115,14 @@
   </url>
   
   <url>
-    <loc>https://ysl.cm/tags/Cloudflare/</loc>
+    <loc>https://ysl.cm/tags/Hexo/</loc>
     <lastmod>2023-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://ysl.cm/tags/Hexo/</loc>
+    <loc>https://ysl.cm/tags/Cloudflare/</loc>
     <lastmod>2023-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
